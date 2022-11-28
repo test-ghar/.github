@@ -1,0 +1,12 @@
+name: Run commands
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  Run-Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - run: uname
